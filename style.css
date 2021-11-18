@@ -1,7 +1,8 @@
 .container {
-
     height: 100vh;
     margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292f33;
 }
 
 header {
@@ -9,47 +10,72 @@ header {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    text-decoration: underline;
+    border-bottom: 1px lightgray solid;
 }
 
 main {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
 
-article {
- 
-    width: 27vw;
-    height: 70vh;
-    margin-right: 10px;
+article:not(:first-of-type) {
+    margin-top: 80px;
+}
+article:last-of-type{
+    margin-bottom: 80px;
+}
+.content-container{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+}
+.content{
+    display: flex;
+    margin-top:20px ;
 }
 h2{
     font-size: 30px;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    padding-bottom: 30px;
+    border-bottom: 1px lightgray solid;
 }
 h3{
     font-size: 24px;
     margin: 15px 0px 0px 0px;
 }
-ol, ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 20px;
+ul, ol{
+    width: 20vw;
 }
-ol li, ul li{
+ li{
+    font-size: 18px;
     line-height: 30px;
 }
-.wrapper-fun-fact{
-    display: flex;
-    flex-direction: row;
+.tillagning{
+    margin-right: 60px;
 }
-.fun-fact{
-    width: 4vw;
-    height: 7vh;
-    background-color: black;
+.fun-fact-1,
+.fun-fact-2,
+.fun-fact-3{
+    flex-wrap: wrap;
+    width: 15vw;
+    margin: 60px 0 0 0;
+    padding: 1rem 2rem;
+    color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+}
+.fun-fact-1{
+    background-color: rgb(65, 168, 5);
+}
+.fun-fact-2{
+    background-color: rgb(250, 165, 7);
+}
+.fun-fact-3{
+    background-color: brown;
+}
+.img-wrapper img{
+height: 60vh;
+width:30vw;
 }
