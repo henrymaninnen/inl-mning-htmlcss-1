@@ -1,0 +1,17 @@
+.container{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        text-align: center;
+    }
+    .article-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h2{
+    text-align: center;
+    }
+}
