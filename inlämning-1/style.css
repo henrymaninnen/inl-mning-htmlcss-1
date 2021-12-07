@@ -8,8 +8,8 @@
 header {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px lightgray solid;
 }
 
@@ -78,4 +78,14 @@ ul, ol{
 .img-wrapper img{
 height: 60vh;
 width:30vw;
+display: flex;
+flex-direction: column;
+}
+.img-wrapper a{
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+}
+.img-wrapper a:hover{
+    color: rgb(71, 70, 70);
 }
