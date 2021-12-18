@@ -1,17 +1,104 @@
-.container{
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
     margin: 10px 20px;
     display: flex;
+    max-width: 1400px;
     justify-content: center;
     flex-direction: column;
-    h1{
+    align-items: center;
+
+    h1 {
         text-align: center;
+        font-size: 32px;
+        padding-bottom: 18px;
+        border-bottom: solid #6C63FF 1px;
+        font-family: 'Playfair Display', serif;
     }
-    .article-container{
+
+    .article-container {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+        }
+
+        .underline {
+            height: 1px;
+            background-color: #6C63FF;
+            width: 15%;
+            margin: 0 auto;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+
+        img {
+            height: 20vh;
+        }
     }
+
+    .readmore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        a {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+    }
+}
+footer{
+    background-color: #6C63FF;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
     h2{
-    text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}
+
+//DESKTOP VERISON
+@media screen and (min-width: 1366px) {
+    .container {
+        margin: 0 auto;
+
+        h1 {
+            font-size: 44px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        img {
+            height: 30vh;
+        }
     }
 }

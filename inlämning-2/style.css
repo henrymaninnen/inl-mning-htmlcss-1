@@ -1,8 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   margin: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1400px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -10,10 +16,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container h1 {
   text-align: center;
+  font-size: 32px;
+  padding-bottom: 18px;
+  border-bottom: solid #6C63FF 1px;
+  font-family: 'Playfair Display', serif;
 }
 
 .container .article-container {
@@ -27,9 +40,93 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
-.container h2 {
+.container .article-container h2 {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+}
+
+.container .article-container .underline {
+  height: 1px;
+  background-color: #6C63FF;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.container .article-container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.container .article-container img {
+  height: 20vh;
+}
+
+.container .readmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .readmore h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+.container .readmore a {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+footer {
+  background-color: #6C63FF;
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4em;
+}
+
+footer h2 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    margin: 0 auto;
+  }
+  .container h1 {
+    font-size: 44px;
+  }
+  .container h2 {
+    font-size: 30px;
+  }
+  .container p {
+    font-size: 24px;
+  }
+  .container img {
+    height: 30vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
